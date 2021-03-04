@@ -14,37 +14,39 @@
     </data>
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-       <EditText
-           android:textColor="@color/base_black"
-           android:textColorHint="@color/base_gray"
-           android:id="@+id/etMobile"
-           android:imeOptions="actionNext"
-           android:maxLength="11"
-           android:inputType="phone"
-           android:hint="手机号码"
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <EditText
+            android:id="@+id/etMobile"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:hint="手机号码"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:maxLength="11"
             android:textColor="@color/base_black"
-            android:textColorHint="@color/base_gray"
+            android:textColorHint="@color/base_gray" />
+
+        <EditText
             android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:hint="密码"
             android:imeOptions="actionDone"
             android:inputType="textVisiblePassword"
-            android:hint="密码"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:textColor="@color/base_black"
+            android:textColorHint="@color/base_gray" />
 
         <Button
-            android:layout_width="match_parent"
             android:id="@+id/btLogin"
-            android:text="Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:onClick="@{v}"
-            android:layout_height="wrap_content"/>
+            android:text="Login" />
 
     </LinearLayout>
 
