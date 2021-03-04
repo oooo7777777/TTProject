@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LoginActivity">
+
+    <data>
+
+        <import type="com.zlzw.login.R" />
+
+        <variable
+            name="v"
+            type="com.zlzw.login.LoginActivity" />
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+       <EditText
+           android:textColor="@color/base_black"
+           android:textColorHint="@color/base_gray"
+           android:id="@+id/etMobile"
+           android:imeOptions="actionNext"
+           android:maxLength="11"
+           android:inputType="phone"
+           android:hint="手机号码"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+
+        <EditText
+            android:textColor="@color/base_black"
+            android:textColorHint="@color/base_gray"
+            android:id="@+id/etPassword"
+            android:imeOptions="actionDone"
+            android:inputType="textVisiblePassword"
+            android:hint="密码"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:id="@+id/btLogin"
+            android:text="Login"
+            android:onClick="@{v}"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</layout>
