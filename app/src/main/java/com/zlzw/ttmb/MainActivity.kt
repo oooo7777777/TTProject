@@ -17,22 +17,16 @@ class MainActivity : BaseActivity<ActivityMainBinding, BlankViewModel>() {
         val list = java.util.ArrayList<Fragment>()
 
         val fragmentHome = getFragment(RouterConstant.ROUTER_FRAGMENT_HOME)
-        val fragmentExchange = getFragment(RouterConstant.ROUTER_FRAGMENT_EXCHANGE)
-        val fragmentWisdom = getFragment(RouterConstant.ROUTER_FRAGMENT_WISDOM)
-        val fragmentCard = getFragment(RouterConstant.ROUTER_FRAGMENT_CARD)
         val fragmentMe = getFragment(RouterConstant.ROUTER_FRAGMENT_ME)
 
 
-        if (fragmentHome == null || fragmentExchange == null || fragmentWisdom == null || fragmentCard == null || fragmentMe == null) {
+        if (fragmentHome == null || fragmentMe == null) {
             "业务组件单独调试不应该跟其他业务Module产生交互".toast()
         } else {
             list.add(fragmentHome)
-            list.add(fragmentExchange)
-            list.add(fragmentWisdom)
-            list.add(fragmentCard)
             list.add(fragmentMe)
 
-            val titles = arrayOf("界面1", "界面2", "界面3", "界面4", "界面5")
+            val titles = arrayOf("界面1", "界面2")
             var adapter = BaseFragmentAdapter(supportFragmentManager, list, titles)
             mViewBinding.viewPage.offscreenPageLimit = list.size
             mViewBinding.viewPage.adapter = adapter

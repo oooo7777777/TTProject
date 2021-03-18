@@ -15,12 +15,9 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/moduleCommon" />
             <option value="$PROJECT_DIR$/moduleCore" />
-            <option value="$PROJECT_DIR$/moduleCore/cardModule" />
-            <option value="$PROJECT_DIR$/moduleCore/exchangeModule" />
             <option value="$PROJECT_DIR$/moduleCore/homeModule" />
             <option value="$PROJECT_DIR$/moduleCore/loginModule" />
             <option value="$PROJECT_DIR$/moduleCore/meModule" />
-            <option value="$PROJECT_DIR$/moduleCore/wisdomModule" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

@@ -23,24 +23,20 @@ android {
         if (isDebug.toBoolean()) {
             //debug模式
             buildConfigField "String", "BASE_URL", "\"${url["debugUrl"]}\""
-            buildConfigField "String", "BASE_URL_WEB", "\"${urlWeb["debugUrl"]}\""
 
         } else {
             //release模式
             buildConfigField "String", "BASE_URL", "\"${url["releaseUrl"]}\""
-            buildConfigField "String", "BASE_URL_WEB", "\"${urlWeb["releaseUrl"]}\""
 
         }
         //日志
         buildConfigField "boolean", "LOG_DEBUG", isLog
-
         
         javaCompileOptions {
             annotationProcessorOptions {
                 arguments = [AROUTER_MODULE_NAME: project.getName()]
             }
         }
-
 
     }
 

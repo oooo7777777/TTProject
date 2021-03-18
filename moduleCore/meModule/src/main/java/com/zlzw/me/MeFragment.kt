@@ -25,13 +25,13 @@ class MeFragment : BaseFragment<MMeFragmentBinding, BlankViewModel>(), View.OnCl
     override fun onClick(v: View) {
 
         when (v.id) {
-            R.id.bt1 -> {
+            mViewBinding.bt1.id -> {
                 "onClick".log()
             }
-            R.id.bt2 -> {
+            mViewBinding.bt2.id -> {
                 "onClick".log()
             }
-            R.id.bt3 -> {
+            mViewBinding.bt3.id -> {
                 "onClick".log()
             }
         }

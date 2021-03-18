@@ -52,9 +52,6 @@ if (!isModuleRun.toBoolean()) {
         //判断task是编译期还是运行期
         if (upperName.contains("ASSEMBLE") || upperName.contains("INSTALL")) {
             dependencies.add("implementation", project.project(':' + ':moduleCore:homeModule'))
-            dependencies.add("implementation", project.project(':' + ':moduleCore:exchangeModule'))
-            dependencies.add("implementation", project.project(':' + ':moduleCore:wisdomModule'))
-            dependencies.add("implementation", project.project(':' + ':moduleCore:cardModule'))
             dependencies.add("implementation", project.project(':' + ':moduleCore:meModule'))
             dependencies.add("implementation", project.project(':' + ':moduleCore:loginModule'))
         }

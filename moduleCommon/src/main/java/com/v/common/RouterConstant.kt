@@ -6,9 +6,6 @@ import com.alibaba.android.arouter.launcher.ARouter
 object RouterConstant {
 
     const val ROUTER_FRAGMENT_HOME = "/home/homeModule"
-    const val ROUTER_FRAGMENT_EXCHANGE = "/exchange/exchangeModule"
-    const val ROUTER_FRAGMENT_WISDOM = "/wisdom/wisdomModule"
-    const val ROUTER_FRAGMENT_CARD = "/card/cardModule"
     const val ROUTER_FRAGMENT_ME = "/me/meModule"
 
 

@@ -5,7 +5,6 @@
  */
 ext {
 
-
     android = [
             compileSdkVersion: 29,
             minSdkVersion    : 21,
@@ -13,35 +12,23 @@ ext {
             buildToolsVersion: "29.0.2",
             versionCode      : 100,
             versionName      : "1.0.0"
-
     ]
 
-    appId = ["app"     : "com.zlzw.ttmb.test",
-             "home"    : "com.zlzw.home",
-             "card"    : "com.zlzw.card",
-             "exchange": "com.zlzw.exchange",
-             "wisdom"  : "com.zlzw.wisdom",
-             "me"      : "com.zlzw.me",
-             "login"   : "com.zlzw.login"
+    appId = ["app"  : "com.zlzw.ttmb.test",
+             "home" : "com.zlzw.home",
+             "me"   : "com.zlzw.me",
+             "login": "com.zlzw.login"
     ]
-
 
     url = [
-            "debugUrl"  : "http://apiv2.ttmb.aiboom.cn/",
-            "releaseUrl": "http://203.107.44.102:9112/"
+            "debugUrl"  : "https://gank.io/api/v2/",
+            "releaseUrl": "https://gank.io/api/v2/"
     ]
 
-    urlWeb = [
-            "debugUrl"  : "http://203.107.44.102:9113/index.html#/",
-            "releaseUrl": "http://203.107.44.102:9113/index.html#/"
-    ]
-
+    //这里放第三方库
     dependencies = [
-            "appUpdate"     : "com.azhon:appupdateX:3.0.3",//版本更新
             "magicIndicator": "com.github.hackware1993:MagicIndicator:1.7.0",//指示器
-            "imgSelect"     : "com.qw:coco:1.1.2",//图片选择库
-            "imgBrowse"     : "com.github.Hitomis.transferee:Transferee:1.6.1",//图片浏览库
-            "imgBrowseGlide": "com.github.Hitomis.transferee:GlideImageLoader:1.6.1"//图片浏览库Glide
+
     ]
 
 }
