@@ -7,6 +7,8 @@ plugins {
 
 
 def cfg = rootProject.ext.android
+def librarys = rootProject.ext.dependencies
+
 android {
     compileSdkVersion cfg.compileSdkVersion
     buildToolsVersion cfg.buildToolsVersion
@@ -56,4 +58,6 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     api fileTree(dir: 'libs', include: ['*.aar'])
     api 'com.vlibrary:VLibrary:2.2.0'
+    librarys.each { k, v -> api v }
+
 }
