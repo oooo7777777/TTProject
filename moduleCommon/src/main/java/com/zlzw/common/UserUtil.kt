@@ -2,7 +2,7 @@ package com.zlzw.common
 
 import android.text.TextUtils
 import com.v.base.utils.SPUtil
-import com.v.base.utils.ext.toBean
+import com.v.base.utils.toBean
 import com.zlzw.common.bean.UserBean
 
 

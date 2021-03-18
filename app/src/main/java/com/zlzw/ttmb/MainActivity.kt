@@ -5,7 +5,7 @@ import com.alibaba.android.arouter.launcher.ARouter
 import com.v.base.BaseActivity
 import com.v.base.BaseFragmentAdapter
 import com.v.base.BlankViewModel
-import com.v.base.utils.ext.toast
+import com.v.base.utils.toast
 import com.zlzw.common.RouterConstant
 import com.zlzw.ttmb.databinding.ActivityMainBinding
 

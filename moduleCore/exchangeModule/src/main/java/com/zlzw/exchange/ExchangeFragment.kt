@@ -4,7 +4,7 @@ import android.view.View
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.v.base.BaseFragment
 import com.v.base.BlankViewModel
-import com.v.base.utils.ext.log
+import com.v.base.utils.log
 import com.zlzw.common.RouterConstant
 import com.zlzw.exchange.databinding.EExchangeFragmentBinding
 
