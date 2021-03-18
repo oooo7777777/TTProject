@@ -7,7 +7,7 @@ import com.v.base.BlankViewModel
 import com.v.base.utils.addFragment
 import com.zlzw.card.R
 import com.zlzw.card.databinding.CActivityCardBinding
-import com.zlzw.common.RouterConstant
+import com.v.common.RouterConstant
 
 class CardActivity : BaseActivity<CActivityCardBinding, BlankViewModel>() {
 

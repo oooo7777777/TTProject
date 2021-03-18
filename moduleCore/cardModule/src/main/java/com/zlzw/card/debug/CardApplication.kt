@@ -1,6 +1,6 @@
 package com.zlzw.card.debug
 
-import com.zlzw.common.MyApplication
+import com.v.common.MyApplication
 
 
 class CardApplication : MyApplication() {

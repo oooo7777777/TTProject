@@ -1,6 +1,6 @@
 package com.zlzw.exchange.debug
 
-import com.zlzw.common.MyApplication
+import com.v.common.MyApplication
 
 
 class ExchangeApplication : MyApplication() {

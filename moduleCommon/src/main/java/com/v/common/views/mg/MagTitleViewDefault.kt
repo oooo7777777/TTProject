@@ -1,4 +1,4 @@
-package com.zlzw.common.views.mg
+package com.v.common.views.mg
 import android.content.Context
 import android.graphics.Color
 import android.graphics.Typeface

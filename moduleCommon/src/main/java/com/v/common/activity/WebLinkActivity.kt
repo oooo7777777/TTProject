@@ -1,4 +1,4 @@
-package com.zlzw.common.activity
+package com.v.common.activity
 
 import android.view.View
 import android.webkit.JavascriptInterface
@@ -7,7 +7,7 @@ import android.webkit.WebView
 import com.orhanobut.logger.Logger
 import com.v.base.BaseActivity
 import com.v.base.BlankViewModel
-import com.zlzw.common.databinding.AppActivityWebLinkBinding
+import com.v.common.databinding.AppActivityWebLinkBinding
 import qiu.niorgai.StatusBarCompat
 
 

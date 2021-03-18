@@ -1,4 +1,4 @@
-package com.zlzw.common.bean
+package com.v.common.bean
 
 /**
  * @Author : ww

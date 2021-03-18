@@ -9,7 +9,7 @@ package com.zlzw.ttmb.model
 import androidx.lifecycle.MutableLiveData
 import com.v.base.BaseViewModel
 import com.v.base.utils.toList
-import com.zlzw.common.net.RetrofitManager
+import com.v.common.net.RetrofitManager
 import com.zlzw.ttmb.bean.SplashBean
 
 class SplashViewModel : BaseViewModel() {

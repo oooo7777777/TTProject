@@ -1,6 +1,6 @@
 package com.zlzw.home.debug
 
-import com.zlzw.common.MyApplication
+import com.v.common.MyApplication
 
 
 class HomeApplication : MyApplication() {

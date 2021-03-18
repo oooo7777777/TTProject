@@ -1,9 +1,9 @@
-package com.zlzw.common
+package com.v.common
 
 import android.text.TextUtils
 import com.v.base.utils.SPUtil
 import com.v.base.utils.toBean
-import com.zlzw.common.bean.UserBean
+import com.v.common.bean.UserBean
 
 
 object UserUtil {

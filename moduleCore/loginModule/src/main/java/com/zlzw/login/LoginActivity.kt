@@ -4,7 +4,7 @@ package com.zlzw.login
 import android.view.View
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.v.base.BaseActivity
-import com.zlzw.common.RouterConstant
+import com.v.common.RouterConstant
 import com.zlzw.login.databinding.LActivityLoginBinding
 import com.zlzw.login.model.LoginViewModel
 

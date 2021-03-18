@@ -1,4 +1,4 @@
-package com.zlzw.common.views
+package com.v.common.views
 
 import android.content.Context
 import android.util.AttributeSet
@@ -12,7 +12,7 @@ import com.scwang.smart.refresh.layout.api.RefreshKernel
 import com.scwang.smart.refresh.layout.api.RefreshLayout
 import com.scwang.smart.refresh.layout.constant.RefreshState
 import com.scwang.smart.refresh.layout.constant.SpinnerStyle
-import com.zlzw.common.R
+import com.v.common.R
 
 class ClassicsHeader : LinearLayout, RefreshHeader {
     constructor(context: Context) : super(context) {

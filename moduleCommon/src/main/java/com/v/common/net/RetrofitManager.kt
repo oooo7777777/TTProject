@@ -1,10 +1,10 @@
-package com.zlzw.common.net
+package com.v.common.net
 
 
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import com.v.base.net.BaseLogInterceptor
 import com.v.base.net.FastJsonConverterFactory
-import com.zlzw.common.BuildConfig
+import com.v.common.BuildConfig
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import java.util.concurrent.TimeUnit

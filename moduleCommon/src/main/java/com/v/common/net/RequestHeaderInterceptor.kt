@@ -1,9 +1,9 @@
-package com.zlzw.common.net
+package com.v.common.net
 
 import android.text.TextUtils
 import com.v.base.BaseApplication
 import com.v.base.utils.getAppVersionCode
-import com.zlzw.common.UserUtil
+import com.v.common.UserUtil
 import okhttp3.FormBody
 import okhttp3.Interceptor
 import okhttp3.Request

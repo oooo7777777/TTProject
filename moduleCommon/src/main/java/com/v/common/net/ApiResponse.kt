@@ -1,4 +1,4 @@
-package com.zlzw.common.net
+package com.v.common.net
 
 import com.v.base.net.BaseResponse
 

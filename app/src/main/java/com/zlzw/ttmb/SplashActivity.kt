@@ -9,8 +9,8 @@ package com.zlzw.ttmb
 import androidx.lifecycle.Observer
 import com.v.base.BaseActivity
 import com.v.base.utils.goActivity
-import com.zlzw.common.RouterConstant
-import com.zlzw.common.UserUtil
+import com.v.common.RouterConstant
+import com.v.common.UserUtil
 import com.zlzw.ttmb.databinding.ActivitySplashBinding
 import com.zlzw.ttmb.model.SplashViewModel
 

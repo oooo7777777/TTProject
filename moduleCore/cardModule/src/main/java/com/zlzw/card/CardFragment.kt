@@ -6,7 +6,7 @@ import com.v.base.BaseFragment
 import com.v.base.BlankViewModel
 import com.v.base.utils.log
 import com.zlzw.card.databinding.CFragmentCardBinding
-import com.zlzw.common.RouterConstant
+import com.v.common.RouterConstant
 
 
 @Route(path = RouterConstant.ROUTER_FRAGMENT_CARD)
