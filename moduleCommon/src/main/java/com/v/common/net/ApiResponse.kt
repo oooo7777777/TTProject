@@ -9,7 +9,7 @@ class ApiResponse<T> : BaseResponse<T>() {
     var msg = ""
     var data: T? = null
 
-    override fun isSuccess() = status == 0
+    override fun isSuccess() = status == 100
 
     override fun getResponseCode() = status
 
