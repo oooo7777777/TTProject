@@ -53,7 +53,7 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     api fileTree(dir: 'libs', include: ['*.aar'])
-    api 'com.vlibrary:VLibrary:2.3.0'
+    api 'com.vlibrary:VLibrary:2.5.0'
     librarys.each { k, v -> api v }
 
 }
