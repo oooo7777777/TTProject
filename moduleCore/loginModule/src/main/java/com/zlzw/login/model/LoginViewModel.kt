@@ -5,7 +5,6 @@ package com.zlzw.login.model
 import androidx.lifecycle.MutableLiveData
 import com.v.base.BaseViewModel
 import com.v.base.utils.toList
-import com.v.common.net.RetrofitManager
 import com.zlzw.login.bean.LoginBean
 
 /**
@@ -24,11 +23,11 @@ class LoginViewModel : BaseViewModel() {
             "password" to password
         )
 
-        request({
-            RetrofitManager.instance.post("itaoke.app.user.login", map)
-        }, success = {
-            listBean.value = it.toString().toList(LoginBean::class.java)
-        },dialog = true)
+//        request({
+//            RetrofitManager.instance.post("itaoke.app.user.login", map)
+//        }, success = {
+//            listBean.value = it.toString().toList(LoginBean::class.java)
+//        },dialog = true)
 
     }
 

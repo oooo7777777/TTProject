@@ -28,6 +28,7 @@ ext {
     //这里放第三方库
     dependencies = [
             "magicIndicator": "com.github.hackware1993:MagicIndicator:1.7.0",//指示器
+            "arouter"       : "com.alibaba:arouter-api:1.5.1",//arouter
 
     ]
 

@@ -1,9 +1,9 @@
 package com.v.common
 
 import android.text.TextUtils
-import com.v.base.utils.SPUtil
 import com.v.base.utils.toBean
 import com.v.common.bean.UserBean
+import com.v.common.utils.SPUtil
 
 
 object UserUtil {
@@ -11,8 +11,8 @@ object UserUtil {
     private var token = ""
     private var userBean: UserBean? = null
 
-    private val SP_TOKEN = "SP_TOKEN"
-    private val SP_USER_INFO = "SP_USER_INFO"
+    private const val SP_TOKEN = "SP_TOKEN"
+    private const val SP_USER_INFO = "SP_USER_INFO"
     private fun emptyData() {
         token = ""
         SPUtil.instance.remove(SP_TOKEN)

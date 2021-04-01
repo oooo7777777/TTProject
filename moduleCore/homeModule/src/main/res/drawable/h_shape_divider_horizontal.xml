@@ -15,6 +15,6 @@
   -->
 
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@color/base_red" />
+    <solid android:color="@android:color/holo_red_dark" />
     <size android:height="5dp" />
 </shape>
