@@ -2,36 +2,32 @@ plugins {
     id 'com.android.library'
     id 'kotlin-android'
     id 'kotlin-kapt'
-    id 'kotlin-android-extensions'
+    id 'kotlin-parcelize'
 }
 
-
-def cfg = rootProject.ext.android
-def librarys = rootProject.ext.dependencies
-
 android {
-    compileSdkVersion cfg.compileSdkVersion
-    buildToolsVersion cfg.buildToolsVersion
+    compileSdkVersion Versions.compileSdkVersion
+    buildToolsVersion Versions.buildToolsVersion
 
     defaultConfig {
-        minSdkVersion cfg.minSdkVersion
-        targetSdkVersion cfg.targetSdkVersion
-        versionCode cfg.versionCode
-        versionName cfg.versionName
+        minSdkVersion Versions.minSdkVersion
+        targetSdkVersion Versions.targetSdkVersion
+        versionCode Versions.versionCode
+        versionName Versions.versionName
 
 
-        if (isDebug.toBoolean()) {
+        if (Module.isDebug) {
             //debug模式
-            buildConfigField "String", "BASE_URL", "\"${url["debugUrl"]}\""
+            buildConfigField "String", "BASE_URL", "\"${Url.debugUrl}\""
 
         } else {
             //release模式
-            buildConfigField "String", "BASE_URL", "\"${url["releaseUrl"]}\""
+            buildConfigField "String", "BASE_URL", "\"${Url.releaseUrl}\""
 
         }
         //日志
-        buildConfigField "boolean", "LOG_DEBUG", isLog
-        
+        buildConfigField "boolean", "LOG_DEBUG", "${Module.isLog}"
+
         javaCompileOptions {
             annotationProcessorOptions {
                 arguments = [AROUTER_MODULE_NAME: project.getName()]
@@ -42,10 +38,11 @@ android {
 
     buildTypes {
         release {
-            consumerProguardFiles   'proguard-rules.pro'
-        }}
+            consumerProguardFiles 'proguard-rules.pro'
+        }
+    }
 
-    buildFeatures{
+    buildFeatures {
         dataBinding = true
     }
 
@@ -53,7 +50,7 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     api fileTree(dir: 'libs', include: ['*.aar'])
-    api 'com.vlibrary:VLibrary:2.7.0'
-    librarys.each { k, v -> api v }
+    Libs.dependencies.each { v -> api v }
+    Libs.dependenciesKapt.each { v -> kapt v }
 
 }

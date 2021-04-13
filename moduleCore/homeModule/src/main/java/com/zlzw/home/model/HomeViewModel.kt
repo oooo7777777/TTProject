@@ -1,8 +1,8 @@
 package com.zlzw.home.model
 
 import androidx.lifecycle.MutableLiveData
+import com.v.base.BaseApplication.Companion.apiBase
 import com.v.base.BaseViewModel
-import com.v.base.apiBase
 import com.v.base.utils.toList
 import com.zlzw.home.bean.HomeBean
 
