@@ -14,11 +14,11 @@ class MagPagerIndicatorDefault(context: Context?) : LinePagerIndicator(context) 
     init {
 
         mode = MODE_EXACTLY
-        lineWidth = 25f.dp2px().toFloat()
-        xOffset = 4f.dp2px().toFloat()
-        yOffset = 10f.dp2px().toFloat()
-        lineHeight = 5f.dp2px().toFloat()
-        roundRadius = 5f.dp2px().toFloat()
+        lineWidth = 25.dp2px().toFloat()
+        xOffset = 4.dp2px().toFloat()
+        yOffset = 10.dp2px().toFloat()
+        lineHeight = 5.dp2px().toFloat()
+        roundRadius = 5.dp2px().toFloat()
         setColors(Color.parseColor("#FF5369"))
     }
 

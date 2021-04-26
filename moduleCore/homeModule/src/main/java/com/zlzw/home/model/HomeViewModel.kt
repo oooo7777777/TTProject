@@ -3,25 +3,29 @@ package com.zlzw.home.model
 import androidx.lifecycle.MutableLiveData
 import com.v.base.BaseApplication.Companion.apiBase
 import com.v.base.BaseViewModel
-import com.v.base.utils.toList
 import com.zlzw.home.bean.HomeBean
 
 /**
  * author  :
  * desc    :
- * time    : 2021-03-18 17:40:42
+ * time    : 2021-04-26 16:20:49
  */
 class HomeViewModel : BaseViewModel() {
 
-    var listBean = MutableLiveData<List<HomeBean>>()
+    var bean = MutableLiveData<HomeBean>()
 
-    fun getList(page: Int) {
+    fun getData(page: Int) {
 
-        requestDefault({
-            apiBase.get("data/category/Girl/type/Girl/page/" + page + "/count/20")
-        }, success = {
-            listBean.value = it.toString().toList(HomeBean::class.java)
-        })
+        val map = mapOf(
+            "pageNum" to page.toString()
+        )
+
+        request(
+            {
+                apiBase.get("https://gank.io/api/v2/data/category/Girl/type/Girl/page/" + page + "/count/20")
+            },
+            bean
+        )
 
     }
 
