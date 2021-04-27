@@ -9,12 +9,14 @@ package com.zlzw.ttmb
 import com.v.base.BaseActivity
 import com.v.base.BlankViewModel
 import com.v.base.utils.goActivity
+import com.v.common.RouterConstant
 import com.zlzw.ttmb.databinding.ActivitySplashBinding
 
 class SplashActivity : BaseActivity<ActivitySplashBinding, BlankViewModel>() {
 
     override fun initData() {
         this.goActivity(MainActivity::class.java)
+//        RouterConstant.goLogin(this)
     }
 
     override fun createObserver() {

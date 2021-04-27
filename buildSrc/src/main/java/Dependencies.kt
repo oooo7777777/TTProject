@@ -29,11 +29,12 @@ object Libs {
     var dependencies = arrayOf(
         "com.github.oooo7777777:VLibrary:3.1.0",//VLibrary
         "com.github.hackware1993:MagicIndicator:1.7.0",//指示器//
-        "com.alibaba:arouter-api:1.5.1"//arouter
+        "com.didi.drouter:drouter-api:1.0.4"//drouter
+
     )
 
-    var dependenciesKapt = arrayOf(
-        "com.alibaba:arouter-compiler:1.5.1"//arouter
-    )
+//    var dependenciesKapt = arrayOf(
+//        "com.alibaba:arouter-compiler:1.5.1"//arouter
+//    )
 }
 

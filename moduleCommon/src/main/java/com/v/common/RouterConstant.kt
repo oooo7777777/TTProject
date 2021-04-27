@@ -1,12 +1,16 @@
 package com.v.common
 
-import com.alibaba.android.arouter.launcher.ARouter
+import android.content.Context
+import android.content.Intent
+import com.didi.drouter.api.DRouter
+import com.didi.drouter.router.RouterCallback.ActivityCallback
+import com.didi.drouter.utils.RouterLogger
 
 
 object RouterConstant {
 
-    const val ROUTER_FRAGMENT_HOME = "/home/homeModule"
-    const val ROUTER_FRAGMENT_ME = "/me/meModule"
+    const val ROUTER_FRAGMENT_HOME = "/homeModule"
+    const val ROUTER_FRAGMENT_ME = "/meModule"
 
 
     /**
@@ -14,16 +18,20 @@ object RouterConstant {
      */
     class LoginRouter {
         companion object {
-            const val PATH = "/login/loginModule"
+            const val PATH = "/loginModule"
         }
     }
 
     /**
      * 前往登录
      */
-    fun goLogin() {
-        ARouter.getInstance()
-            .build(LoginRouter.PATH)
-            .navigation()
+    fun goLogin(context: Context,onActivityResult: (resultCode: Int, intent: Intent?) -> Unit) {
+
+        DRouter.build(LoginRouter.PATH)
+            .start(context, object : ActivityCallback() {
+                override fun onActivityResult(resultCode: Int, intent: Intent?) {
+                    onActivityResult(resultCode,intent)
+                }
+            })
     }
 }

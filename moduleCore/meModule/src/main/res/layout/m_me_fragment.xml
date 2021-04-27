@@ -20,20 +20,24 @@
             android:id="@+id/bt1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="onActivityResult"
+            android:textAllCaps="false"
             app:click="@{v}" />
 
         <Button
             android:id="@+id/bt2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textAllCaps="false"
             app:click="@{v}" />
 
         <Button
             android:id="@+id/bt3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textAllCaps="false"
             app:click="@{v}"
-            app:clickTime="@{3000}"/>
+            app:clickTime="@{3000}" />
 
     </LinearLayout>
 

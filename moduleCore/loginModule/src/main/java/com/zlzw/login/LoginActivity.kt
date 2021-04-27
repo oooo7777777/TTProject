@@ -1,9 +1,11 @@
 package com.zlzw.login
 
 
+import android.os.Bundle
 import android.view.View
-import com.alibaba.android.arouter.facade.annotation.Route
+import com.didi.drouter.annotation.Router
 import com.v.base.BaseActivity
+import com.v.base.utils.finish
 import com.v.common.RouterConstant
 import com.zlzw.login.databinding.LActivityLoginBinding
 import com.zlzw.login.model.LoginViewModel
@@ -13,7 +15,7 @@ import com.zlzw.login.model.LoginViewModel
  * desc    :  登录
  * time    : 2021-03-03 16:51:14
  */
-@Route(path = RouterConstant.LoginRouter.PATH)
+@Router(path = RouterConstant.LoginRouter.PATH)
 class LoginActivity : BaseActivity<LActivityLoginBinding, LoginViewModel>(), View.OnClickListener {
 
 
@@ -28,7 +30,16 @@ class LoginActivity : BaseActivity<LActivityLoginBinding, LoginViewModel>(), Vie
     override fun onClick(v: View) {
         when (v.id) {
             mViewBinding.btLogin.id -> {
-                mViewModel.login(mViewBinding.etMobile.text.toString(),mViewBinding.etPassword.text.toString())
+
+                var bundle = Bundle()
+                bundle.putString("result", "LoginActivity finish数据")
+                this.finish(RESULT_OK, bundle)
+
+
+//                mViewModel.login(
+//                    mViewBinding.etMobile.text.toString(),
+//                    mViewBinding.etPassword.text.toString()
+//                )
             }
         }
     }

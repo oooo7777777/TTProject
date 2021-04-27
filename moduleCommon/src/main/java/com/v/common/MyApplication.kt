@@ -1,8 +1,7 @@
 package com.v.common
 
-import com.alibaba.android.arouter.launcher.ARouter
+import com.didi.drouter.api.DRouter
 import com.v.base.BaseApplication
-import com.v.common.BuildConfig
 
 open class MyApplication : BaseApplication() {
     override fun isDebug(): Boolean {
@@ -19,10 +18,7 @@ open class MyApplication : BaseApplication() {
 
     private fun initARouter() {
 
-        if (BuildConfig.LOG_DEBUG) {
-            ARouter.openLog()
-            ARouter.openDebug()
-        }
-        ARouter.init(this)
+        DRouter.init(this)
+
     }
 }

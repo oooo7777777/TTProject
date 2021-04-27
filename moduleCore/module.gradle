@@ -3,18 +3,10 @@ if (Module.isModuleRun) {
 } else {
     apply plugin: 'com.android.library'
 }
-
 apply plugin: 'kotlin-android'
-
 apply plugin: 'kotlin-parcelize'
-
 apply plugin: 'kotlin-kapt'
 
-kapt {
-    arguments {
-        arg("AROUTER_MODULE_NAME", project.getName())
-    }
-}
 
 android {
     compileSdkVersion Versions.compileSdkVersion
@@ -63,6 +55,5 @@ android {
 }
 dependencies {
     implementation project(':moduleCommon')
-    Libs.dependenciesKapt.each { v -> kapt v }
 }
 

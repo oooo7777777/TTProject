@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.application'
+    id 'com.didi.drouter'//drouter
     id 'kotlin-android'
     id 'kotlin-kapt'
     id 'kotlin-parcelize'

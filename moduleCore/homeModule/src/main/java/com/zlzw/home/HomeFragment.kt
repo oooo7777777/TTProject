@@ -4,7 +4,7 @@ import android.graphics.Color
 import com.v.base.BaseFragment
 import android.view.View
 import androidx.lifecycle.Observer
-import com.alibaba.android.arouter.facade.annotation.Route
+import com.didi.drouter.annotation.Router
 import com.v.base.utils.divider
 import com.v.base.utils.linear
 import com.v.base.utils.loadData
@@ -18,7 +18,7 @@ import com.zlzw.home.databinding.HFragmentHomeBinding
  * desc    :
  * time    : 2021-04-26 16:20:49
  */
-@Route(path = RouterConstant.ROUTER_FRAGMENT_HOME)
+@Router(path = RouterConstant.ROUTER_FRAGMENT_HOME)
 class HomeFragment : BaseFragment<HFragmentHomeBinding, HomeViewModel>(), View.OnClickListener {
 
     private var page = 1

@@ -51,6 +51,5 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     api fileTree(dir: 'libs', include: ['*.aar'])
     Libs.dependencies.each { v -> api v }
-    Libs.dependenciesKapt.each { v -> kapt v }
 
 }
