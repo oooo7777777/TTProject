@@ -43,6 +43,7 @@ class MainActivity : BaseActivity<ActivityMainBinding, BlankViewModel>() {
             mViewBinding.tabLayout.getTabAt(i)!!.text = titles[i]
         }
 
+
     }
 
     override fun createObserver() {
