@@ -27,7 +27,7 @@ object Url {
 
 object Libs {
     var dependencies = arrayOf(
-        "com.github.oooo7777777:VLibrary:3.1.0",//VLibrary
+        "com.github.oooo7777777:VLibrary:3.2.1",//VLibrary
         "com.github.hackware1993:MagicIndicator:1.7.0",//指示器//
         "com.didi.drouter:drouter-api:1.0.4"//drouter
 

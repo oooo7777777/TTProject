@@ -5,9 +5,9 @@ import com.v.base.BaseFragment
 import android.view.View
 import androidx.lifecycle.Observer
 import com.didi.drouter.annotation.Router
-import com.v.base.utils.divider
-import com.v.base.utils.linear
-import com.v.base.utils.loadData
+import com.v.base.utils.ext.divider
+import com.v.base.utils.ext.linear
+import com.v.base.utils.ext.loadData
 import com.v.common.RouterConstant
 import com.zlzw.home.adapter.HomeFragmentAdapter
 import com.zlzw.home.model.HomeViewModel
@@ -27,8 +27,7 @@ class HomeFragment : BaseFragment<HFragmentHomeBinding, HomeViewModel>(), View.O
         mViewBinding.recyclerView.divider {
             setColor(Color.parseColor("#ff0000"))
             setDivider(10)
-        }
-            .linear(HomeFragmentAdapter()) as HomeFragmentAdapter
+        }.linear(HomeFragmentAdapter()) as HomeFragmentAdapter
     }
 
     override fun initData() {

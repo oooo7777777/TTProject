@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.view.View
 import com.didi.drouter.annotation.Router
 import com.v.base.BaseActivity
-import com.v.base.utils.finish
+import com.v.base.utils.ext.finish
 import com.v.common.RouterConstant
 import com.zlzw.login.databinding.LActivityLoginBinding
 import com.zlzw.login.model.LoginViewModel
@@ -33,7 +33,7 @@ class LoginActivity : BaseActivity<LActivityLoginBinding, LoginViewModel>(), Vie
 
                 var bundle = Bundle()
                 bundle.putString("result", "LoginActivity finish数据")
-                this.finish(RESULT_OK, bundle)
+                this.finish(bundle = bundle)
 
 
 //                mViewModel.login(
