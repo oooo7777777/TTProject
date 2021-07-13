@@ -1,15 +1,15 @@
 package com.zlzw.home.debug
 
-import com.v.base.BaseActivity
-import com.v.base.BlankViewModel
+import com.v.base.VBActivity
+import com.v.base.VBBlankViewModel
 import com.v.base.utils.ext.addFragment
 import com.zlzw.home.HomeFragment
 import com.zlzw.home.databinding.HHomeActivityBinding
 
-class HomeActivity : BaseActivity<HHomeActivityBinding, BlankViewModel>() {
+class HomeActivity : VBActivity<HHomeActivityBinding, VBBlankViewModel>() {
 
     override fun initData() {
-        this.addFragment(HomeFragment(), mViewBinding.llRoot.id)
+        this.addFragment(HomeFragment(), mDataBinding.llRoot.id)
     }
 
     override fun createObserver() {

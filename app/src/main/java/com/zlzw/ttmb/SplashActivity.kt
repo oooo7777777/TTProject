@@ -6,12 +6,12 @@ package com.zlzw.ttmb
  * time    : 2021-03-03 16:36:41
  */
 
-import com.v.base.BaseActivity
-import com.v.base.BlankViewModel
+import com.v.base.VBActivity
+import com.v.base.VBBlankViewModel
 import com.v.base.utils.ext.goActivity
 import com.zlzw.ttmb.databinding.ActivitySplashBinding
 
-class SplashActivity : BaseActivity<ActivitySplashBinding, BlankViewModel>() {
+class SplashActivity : VBActivity<ActivitySplashBinding, VBBlankViewModel>() {
 
     override fun initData() {
         this.goActivity(MainActivity::class.java)

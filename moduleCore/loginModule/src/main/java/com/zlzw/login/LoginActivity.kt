@@ -4,7 +4,7 @@ package com.zlzw.login
 import android.os.Bundle
 import android.view.View
 import com.didi.drouter.annotation.Router
-import com.v.base.BaseActivity
+import com.v.base.VBActivity
 import com.v.base.utils.ext.finish
 import com.v.common.RouterConstant
 import com.zlzw.login.databinding.LActivityLoginBinding
@@ -16,11 +16,11 @@ import com.zlzw.login.model.LoginViewModel
  * time    : 2021-03-03 16:51:14
  */
 @Router(path = RouterConstant.LoginRouter.PATH)
-class LoginActivity : BaseActivity<LActivityLoginBinding, LoginViewModel>(), View.OnClickListener {
+class LoginActivity : VBActivity<LActivityLoginBinding, LoginViewModel>(), View.OnClickListener {
 
 
     override fun initData() {
-        mViewBinding.v = this
+        mDataBinding.v = this
     }
 
     override fun createObserver() {
@@ -29,7 +29,7 @@ class LoginActivity : BaseActivity<LActivityLoginBinding, LoginViewModel>(), Vie
 
     override fun onClick(v: View) {
         when (v.id) {
-            mViewBinding.btLogin.id -> {
+            mDataBinding.btLogin.id -> {
 
                 var bundle = Bundle()
                 bundle.putString("result", "LoginActivity finish数据")
@@ -37,8 +37,8 @@ class LoginActivity : BaseActivity<LActivityLoginBinding, LoginViewModel>(), Vie
 
 
 //                mViewModel.login(
-//                    mViewBinding.etMobile.text.toString(),
-//                    mViewBinding.etPassword.text.toString()
+//                    mDataBinding.etMobile.text.toString(),
+//                    mDataBinding.etPassword.text.toString()
 //                )
             }
         }

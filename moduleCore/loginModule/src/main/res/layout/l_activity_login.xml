@@ -45,7 +45,7 @@
             android:id="@+id/btLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="@{v}"
+            app:vb_click="@{v}"
             android:text="Login" />
 
     </LinearLayout>

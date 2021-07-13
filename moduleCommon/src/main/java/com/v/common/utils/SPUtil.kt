@@ -13,7 +13,7 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.content.SharedPreferences
 import androidx.annotation.NonNull
-import com.v.base.BaseApplication
+import com.v.base.VBApplication
 import java.util.*
 
 
@@ -465,6 +465,6 @@ class SPUtil private constructor(spName: String, mode: Int)
 
     init
     {
-        sp = BaseApplication.getContext().getSharedPreferences(spName, mode)
+        sp = VBApplication.getContext().getSharedPreferences(spName, mode)
     }
 }

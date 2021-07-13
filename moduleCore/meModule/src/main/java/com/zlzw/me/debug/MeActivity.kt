@@ -1,10 +1,10 @@
 package com.zlzw.me.debug
 
-import com.v.base.BaseActivity
-import com.v.base.BlankViewModel
+import com.v.base.VBActivity
+import com.v.base.VBBlankViewModel
 import com.zlzw.me.databinding.MMeActivityBinding
 
-class MeActivity : BaseActivity<MMeActivityBinding, BlankViewModel>() {
+class MeActivity : VBActivity<MMeActivityBinding, VBBlankViewModel>() {
 
     override fun initData() {
 

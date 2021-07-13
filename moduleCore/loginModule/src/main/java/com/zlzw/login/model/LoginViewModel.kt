@@ -3,7 +3,7 @@ package com.zlzw.login.model
 
 
 import androidx.lifecycle.MutableLiveData
-import com.v.base.BaseViewModel
+import com.v.base.VBViewModel
 import com.v.base.utils.toList
 import com.zlzw.login.bean.LoginBean
 
@@ -12,7 +12,7 @@ import com.zlzw.login.bean.LoginBean
  * desc    :  登录
  * time    : 2021-03-03 16:51:14
  */
-class LoginViewModel : BaseViewModel() {
+class LoginViewModel : VBViewModel() {
 
     var listBean = MutableLiveData<List<LoginBean>>()
 

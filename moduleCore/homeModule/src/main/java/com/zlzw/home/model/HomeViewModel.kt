@@ -1,8 +1,8 @@
 package com.zlzw.home.model
 
 import androidx.lifecycle.MutableLiveData
-import com.v.base.BaseApplication.Companion.apiBase
-import com.v.base.BaseViewModel
+import com.v.base.VBApplication.Companion.apiBase
+import com.v.base.VBViewModel
 import com.zlzw.home.bean.HomeBean
 
 /**
@@ -10,7 +10,7 @@ import com.zlzw.home.bean.HomeBean
  * desc    :
  * time    : 2021-04-26 16:20:49
  */
-class HomeViewModel : BaseViewModel() {
+class HomeViewModel : VBViewModel() {
 
     var bean = MutableLiveData<HomeBean>()
 
@@ -20,7 +20,7 @@ class HomeViewModel : BaseViewModel() {
             "pageNum" to page.toString()
         )
 
-        request(
+        vbRequest(
             {
                 apiBase.get("https://gank.io/api/v2/data/category/Girl/type/Girl/page/" + page + "/count/20")
             },
