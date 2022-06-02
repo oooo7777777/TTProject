@@ -27,7 +27,7 @@ object Url {
 
 object Libs {
     val dependencies = arrayOf(
-        "com.github.oooo7777777:VLibrary:3.6.4",//VLibrary
+        "com.github.oooo7777777:VLibrary:3.6.5",//VLibrary
         "com.github.hackware1993:MagicIndicator:1.7.0",//指示器//
         "io.github.didi:drouter-api:2.1.3",//drouter
         "com.github.JessYanCoding:AndroidAutoSize:v1.2.1"//屏幕自适应
