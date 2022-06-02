@@ -1,0 +1,14 @@
+apply from: "../module.gradle"
+
+android {
+    resourcePrefix 'l_'
+    defaultConfig {
+        if (Module.isModuleRun) {
+            applicationId AppId.login
+        }
+    }
+}
+dependencies {
+
+}
+

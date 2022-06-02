@@ -1,0 +1,6 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="l_app_name">LoginModule</string>
+    <string name="l_string_activity_login_title">activity_login</string>
+
+
+</resources>

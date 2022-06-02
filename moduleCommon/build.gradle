@@ -1,0 +1,49 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+}
+
+android {
+    compileSdkVersion Versions.compileSdkVersion
+    buildToolsVersion Versions.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion Versions.minSdkVersion
+        targetSdkVersion Versions.targetSdkVersion
+        versionCode Versions.versionCode
+        versionName Versions.versionName
+
+
+        if (Module.isDebug) {
+            //debug模式
+            buildConfigField "String", "BASE_URL", "\"${Url.debugUrl}\""
+
+        } else {
+            //release模式
+            buildConfigField "String", "BASE_URL", "\"${Url.releaseUrl}\""
+
+        }
+        //日志
+        buildConfigField "boolean", "LOG_DEBUG", "${Module.isLog}"
+
+    }
+
+    buildTypes {
+        release {
+            consumerProguardFiles 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures {
+        dataBinding = true
+    }
+
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    api fileTree(dir: 'libs', include: ['*.aar'])
+    Libs.dependencies.each { v -> api v }
+
+}

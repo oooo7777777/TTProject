@@ -1,0 +1,14 @@
+apply from: "../module.gradle"
+
+android {
+    resourcePrefix 'm_'
+    defaultConfig {
+        if (Module.isModuleRun) {
+            applicationId AppId.me
+        }
+    }
+}
+dependencies {
+
+}
+

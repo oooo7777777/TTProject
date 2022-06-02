@@ -1,0 +1,4 @@
+rootProject.name = "TTProject"
+include ':app'
+include ':moduleCommon'
+include ':moduleCore:homeModule', ':moduleCore:loginModule', ':moduleCore:meModule'

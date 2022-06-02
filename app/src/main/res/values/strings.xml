@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TTProject</string>
+    <string name="string_activity_splash_title">activity_splash</string>
+    <string-array name="main_tab">
+        <item> 首页 </item>
+        <item> 我的 </item>
+    </string-array>
+</resources>
