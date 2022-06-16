@@ -1,7 +1,7 @@
 object Versions {
-    const val compileSdkVersion = 29
+    const val compileSdkVersion = 30
     const val minSdkVersion = 21
-    const val targetSdkVersion = 29
+    const val targetSdkVersion = 30
     const val buildToolsVersion = "29.0.2"
     const val versionCode = 100
     const val versionName = "1.0.0"
@@ -27,7 +27,7 @@ object Url {
 
 object Libs {
     val dependencies = arrayOf(
-        "com.github.oooo7777777:VLibrary:3.6.5",//VLibrary
+        "com.github.oooo7777777:VLibrary:3.7.2",//VLibrary
         "com.github.hackware1993:MagicIndicator:1.7.0",//指示器//
         "io.github.didi:drouter-api:2.1.3",//drouter
         "com.github.JessYanCoding:AndroidAutoSize:v1.2.1"//屏幕自适应

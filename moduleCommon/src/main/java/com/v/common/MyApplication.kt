@@ -23,7 +23,7 @@ open class MyApplication : VBApplication() {
 
         val options = VBConfigOptions.Builder()
             .setNetOptions(netOptions)
-            .setStatusBarColor(Color.parseColor("#ffffff"))
+            .setStatusBarColor("#ffffff")
             .build()
 
         VBConfig.init(options)

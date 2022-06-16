@@ -48,8 +48,10 @@ android {
             } else {
                 manifest.srcFile 'src/main/AndroidManifest.xml'
                 java {
-                    //release 时 debug 目录下文件不需要合并到主工程
                     exclude '**/debug/**'
+                }
+                kotlin {
+                    exclude '**/debug/**/*.kt'
                 }
             }
         }
