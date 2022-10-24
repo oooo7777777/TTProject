@@ -3,7 +3,7 @@ apply from: "../module.gradle"
 android {
     resourcePrefix 'h_'
     defaultConfig {
-        if (Module.isModuleRun) {
+        if (MyModule.isModuleRun) {
             applicationId AppId.home
         }
     }

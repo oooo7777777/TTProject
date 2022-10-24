@@ -3,7 +3,7 @@ apply from: "../module.gradle"
 android {
     resourcePrefix 'l_'
     defaultConfig {
-        if (Module.isModuleRun) {
+        if (MyModule.isModuleRun) {
             applicationId AppId.login
         }
     }

@@ -7,7 +7,6 @@ plugins {
 
 android {
     compileSdkVersion Versions.compileSdkVersion
-    buildToolsVersion Versions.buildToolsVersion
 
     defaultConfig {
         minSdkVersion Versions.minSdkVersion
@@ -16,7 +15,7 @@ android {
         versionName Versions.versionName
 
 
-        if (Module.isDebug) {
+        if (MyModule.isDebug) {
             //debug模式
             buildConfigField "String", "BASE_URL", "\"${Url.debugUrl}\""
 
@@ -26,7 +25,7 @@ android {
 
         }
         //日志
-        buildConfigField "boolean", "LOG_DEBUG", "${Module.isLog}"
+        buildConfigField "boolean", "LOG_DEBUG", "${MyModule.isLog}"
 
     }
 
@@ -45,5 +44,7 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     api fileTree(dir: 'libs', include: ['*.aar'])
     Libs.dependencies.each { v -> api v }
-
+    configurations.all {
+        resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+    }
 }

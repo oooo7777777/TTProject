@@ -1,6 +1,6 @@
 plugins {
     id 'com.android.application'
-    id 'com.didi.drouter'//drouter
+    id 'com.didi.drouter'
     id 'kotlin-android'
     id 'kotlin-kapt'
     id 'kotlin-parcelize'
@@ -9,7 +9,6 @@ plugins {
 android {
 
     compileSdkVersion Versions.compileSdkVersion
-    buildToolsVersion Versions.buildToolsVersion
 
     defaultConfig {
         applicationId  AppId.app
@@ -41,7 +40,7 @@ android {
 
 //编译期组件隔离，运行期组件按需依赖
 //mainModule需要跟cartModule,goodsModule,usersModule进行交互，所以在运行期添加了依赖
-if (!Module.isModuleRun) {
+if (!MyModule.isModuleRun) {
     //获取当前运行的task
     def tasks = project.gradle.startParameter.taskNames
     for (String task : tasks) {
